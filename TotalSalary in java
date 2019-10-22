@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+
+        Scanner sc=new Scanner(System.in);
+        int ba=sc.nextInt();
+        String str=sc.next();
+        char c=str.charAt(0);
+        
+        double hra=0.2*ba;
+        double da=0.5*ba;
+        
+        double pf=0.11*ba;
+        
+        if(c=='A'){
+            double Total=ba+hra+da+1700-pf;
+            int t=(int)Math.round(Total);
+            System.out.println(t);
+        }
+        
+        else if(c=='B'){
+            double Total=ba+hra+da+1500-pf;
+             int t=(int) Math.round(Total);
+            System.out.println(t);
+        }
+        else{
+            double Total=ba+hra+da+1300-pf;
+             int t=(int) Math.round(Total);
+            System.out.println(t);
+        }
+        
+        
+	}
+}
