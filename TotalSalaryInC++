@@ -1,0 +1,28 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main(){
+    char ch;
+    int ba;
+    double total,totals;
+    cin>>ba>>ch;
+    double hra=0.2*ba;
+    double da=0.5*ba;
+    double pf=0.11*ba;
+    if(ch=='A'){
+        total=ba+hra+da+1700;
+        totals=total-pf;
+    }
+    else if(ch=='B'){
+        total=ba+hra+da+1500;
+        totals=total-pf;
+    }
+    else{
+        total=ba+hra+da+1300;
+        totals=total-pf;
+    }
+    int r=round(totals);
+    cout<<r<<endl;
+    return 0;
+}
